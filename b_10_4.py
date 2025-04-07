@@ -7,7 +7,7 @@ pyxel.load("my_resource.pyxres")
 
 
 ballx = [random.randint(0, 199)]
-bally = [random.randint(-30, -80)]
+bally = [random.randint(-80,-30)]
 vx = [math.cos(math.radians(random.randint(30, 150)))]
 vy = [math.sin(math.radians(random.randint(30, 150)))]
 n = [0] #左右どちらに動くか判定する変数
@@ -32,7 +32,7 @@ def update():
     if l >=20: #失敗後のやり直し判定
         if pyxel.btnp(pyxel.KEY_SPACE):
             ballx = [random.randint(0, 199)]
-            bally = [random.randint(-30, -100)]
+            bally = [random.randint(-80,-30)]
             vx = [math.cos(math.radians(random.randint(30, 150)))]
             vy = [math.sin(math.radians(random.randint(30, 150)))]
             n = [0] #左右どちらに動くか判定する変数
@@ -50,7 +50,7 @@ def update():
     elif p >= 10: #クリア後のやり直し判定
         if pyxel.btnp(pyxel.KEY_SPACE):
             ballx = [random.randint(0, 199)]
-            bally = [random.randint(-30, -80)]
+            bally = [random.randint(-80,-30)]
             vx = [math.cos(math.radians(random.randint(30, 150)))]
             vy = [math.sin(math.radians(random.randint(30, 150)))]
             n = [0] #左右どちらに動くか判定する変数
@@ -67,7 +67,7 @@ def update():
     elif prysho ==1: #ポリゴンショック時のやり直し判定
         if pyxel.btnp(pyxel.KEY_SPACE):
             ballx = [random.randint(0, 199)]
-            bally = [random.randint(-30, -80)]
+            bally = [random.randint(-80,-30)]
             vx = [math.cos(math.radians(random.randint(30, 150)))]
             vy = [math.sin(math.radians(random.randint(30, 150)))]
             n = [0] #左右どちらに動くか判定する変数
@@ -85,7 +85,7 @@ def update():
         pass
     elif pyxel.btnp(pyxel.KEY_SPACE):#通常時のやり直し判定
         ballx = [random.randint(0, 199)]
-        bally = [random.randint(-30, -80)]
+        bally = [random.randint(-80,-30)]
         vx = [math.cos(math.radians(random.randint(30, 150)))]
         vy = [math.sin(math.radians(random.randint(30, 150)))]
         n = [0] #左右どちらに動くか判定する変数
@@ -144,7 +144,7 @@ def update():
                         if mas[i]==1:#マスボの処理
                             m=0
                             ballx.append(random.randint(0, 199))
-                            bally.append(random.randint(-30, -80))
+                            bally.append(random.randint(-80,-30))
                             mas.append(0)
                             vx.append(math.cos(math.radians(random.randint(30, 150))))
                             vy.append(math.sin(math.radians(random.randint(30, 150))))
@@ -201,7 +201,7 @@ def update():
                         m = 0
                         #ボール追加
                         ballx.append(random.randint(0, 199))
-                        bally.append(random.randint(-30, -80))
+                        bally.append(random.randint(-80,-30))
                         mas.append(0)
                         vx.append(math.cos(math.radians(random.randint(30, 150))))
                         vy.append(math.sin(math.radians(random.randint(30, 150))))
@@ -320,7 +320,7 @@ def update():
                         l += 1
 #ボール生成
                 ballx[i] = random.randint(0, 199)
-                bally[i] = random.randint(-30, -80)
+                bally[i] = random.randint(-80,-30)
                 vx[i] = math.cos(math.radians(random.randint(30, 150)))
                 vy[i] = math.sin(math.radians(random.randint(30, 150)))
                 c[i] = random.randint(1,8192)
