@@ -212,7 +212,7 @@ def update():
                         #速度を戻す
                     #ひとまず拾えた場合、上にボールを戻す処理
                     ballx[i] = random.randint(0, 199)
-                    bally[i] = random.randint(-30, -80)
+                    bally[i] = random.randint(-80,-30)
 
 #当たった時　次回のボール判定
                     if mas[i] == 0:
